@@ -1,0 +1,227 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background-color: #ECF0F1;
+  width: 100%;
+}
+
+.container {
+  position: relative;
+  display: block;
+  max-width: 26.25em;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.content {
+  height: auto;
+}
+
+.svg-logo {
+  position: relative;
+  display: block;
+  width: 15em;
+  margin: 0 auto;
+  margin-top: 3.75em;
+  margin-bottom: 1.25em;
+}
+
+.svg-logo-sm {
+  width: 2em;
+  margin: .625em auto 1em auto;
+}
+
+h1 {
+  font-family: "brandon-grotesque";
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 2.4em;
+}
+
+p {
+  font-family: "brandon-grotesque";
+  font-weight: 300;
+  font-size: 1.4em;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.container h1 {
+  text-align: center;
+}
+
+.container .section-divider {
+  font-family: "brandon-grotesque";
+  font-size: 1.2em;
+  text-transform: uppercase;
+  color: #F26522;
+  margin-top: 2.5em;
+  text-align: left;
+}
+
+.container .section-divider h2 {
+  width: 30%;
+  margin: 0 0 0 35%;
+  display: inline-block;
+  text-align: center;
+}
+
+.container .section-divider::before {
+  content: "";
+  border-top: 0.125em solid #F26522;
+  width: 35%;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  margin-top: 0.625em;
+}
+
+.container .section-divider::after {
+  content: "";
+  border-top: 0.125em solid #F26522;
+  width: 35%;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  margin-top: 0.625em;
+}
+
+.container .partners {
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 1.25em;
+  height: auto;
+}
+.container .partners li {
+  width: 50%;
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 0;
+  float: left;
+}
+
+.container .partners li .pic {
+  width: 6.25em;
+  height: 6.25em;
+  margin: 0 auto;
+  background-color: white;  
+  margin-bottom: 10px;
+  border-radius: 6.25em;
+  overflow: hidden;
+}
+
+.container .partners li p {
+  line-height: 1em;
+  font-size: 1.2em;
+}
+
+.container .partners li .name {
+  font-weight: 700;
+  font-size: 1.4em;
+}
+
+.container .interns {
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 1.25em;
+  height: auto;
+}
+.container .interns li {
+  width: 33%;
+  height: 11.25em;
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 0;
+  float: left;
+}
+
+.container .interns li .pic {
+  width: 5em;
+  height: 5em;
+  margin: 0 auto;
+  background-color: white;  
+  margin-bottom: 10px;
+  border-radius: 6.25em;
+  overflow: hidden;
+}
+
+.container .interns li p {
+  line-height: 1.2em;
+  font-size: 1em;
+}
+
+.container .interns li .name {
+  font-weight: 700;
+  font-size: 1em;
+}
+
+.container .footer {
+  margin-top: 40px;
+  height: 6.25em;
+  box-sizing: border-box;
+  padding-top: 40px;
+}
+
+.container .footer p {
+  font-size: 1em;
+}
+
+@media only screen and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+  /* Retina-specific stuff here */
+  .container {
+    font-size: 40px;
+  }
+  .svg-logo {
+    width: 60%;
+  }
+}
