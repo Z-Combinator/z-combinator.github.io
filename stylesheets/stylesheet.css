@@ -216,12 +216,11 @@ p {
   font-size: 1em;
 }
 
-@media only screen and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
-  /* Retina-specific stuff here */
+/*@media only screen and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
   .container {
     font-size: 40px;
   }
   .svg-logo {
     width: 60%;
   }
-}
+}*/
